@@ -76,6 +76,39 @@
                   <use href="./images/sprite.svg#close-btn"></use>
                 </svg>
               </button>
+              <form class="order-form">
+                  <p class="order-form-title">Оставьте свои данные, мы вам перезвоним</p>
+                  <label class="order-name order-label">
+                    Имя
+                    <svg class="order-name-icon order-icon" width="18" height="18">
+                      <use href="./images/sprite.svg#order-name"></use>
+                    </svg>
+                    <input class="order-name-input order-input" type="text">
+                  </label>
+                  <label class="order-tel order-label">
+                    Телефон
+                    <svg class="order-tel-icon order-icon" width="18" height="18">
+                      <use href="./images/sprite.svg#order-tel"></use>
+                    </svg>
+                    <input class="order-tel-input order-input" type="text">
+                  </label>
+                  <label class="order-mail order-label">
+                    Почта
+                    <svg class="order-mail-icon order-icon" width="18" height="18">
+                      <use href="./images/sprite.svg#order-mail"></use>
+                    </svg>
+                    <input class="order-mail-input order-input" type="text">
+                  </label>
+                  <label  class="order-comment order-label">
+                    Комментарий
+                    <textarea class="order-comment-textarea" name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                  </label>
+                <label class="order-agreement-btn">
+                  Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                  <input type="checkbox">
+                </label>
+                <button class="order-sent-btn" type="submit">Отправить</button>              
+              </form>
             </div>
           </div>
         </div>
@@ -458,14 +491,18 @@
         </div>
         <!-- Footer mailing -->
         <div class="footer-mailing">
-          <p class="footer-mailing-text">Подпишитесь на рассылку</p>
           <div class="mailing-form">
-          <input class="footer-mail" type="email" name="email" placeholder="E-mail">
-          <button class="footer-mail-button" type="submit">Подписаться
-            <svg class="paper-plane" width="24" height="24">
-              <use href="./images/sprite.svg#paper-plane"></use>
-            </svg>
-          </button>
+            <label class="footer-mailing-text">
+              Подпишитесь на рассылку
+              <input class="footer-mail" type="email" name="email" placeholder="E-mail" />
+            </label>
+            
+            <button class="footer-mail-button" type="submit">
+              Подписаться
+              <svg class="paper-plane" width="24" height="24">
+                <use href="./images/sprite.svg#paper-plane"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>

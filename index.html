@@ -77,43 +77,52 @@
                 </svg>
               </button>
               <form class="order-form">
-                  <h2 class="order-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                  <label class="order-name order-label">
-                    Имя
-                    <svg class="order-name-icon order-icon" width="18" height="18">
-                      <use href="./images/sprite.svg#order-name"></use>
-                    </svg>
-                    <input class="order-name-input order-input" type="text" name="order-name">
-                  </label>
-                  <label class="order-tel order-label">
-                    Телефон
-                    <svg class="order-tel-icon order-icon" width="18" height="18">
-                      <use href="./images/sprite.svg#order-tel"></use>
-                    </svg>
-                    <input class="order-tel-input order-input" type="text" name="order-tel">
-                  </label>
-                  <label class="order-mail order-label">
-                    Почта
-                    <svg class="order-mail-icon order-icon" width="18" height="18">
-                      <use href="./images/sprite.svg#order-mail"></use>
-                    </svg>
-                    <input class="order-mail-input order-input" type="text" name="order-mail">
-                  </label>
-                  <label  class="order-comment order-label">
-                    Комментарий
-                    <textarea class="order-comment-textarea" name="order-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-                  </label>
+                <h2 class="order-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label class="order-name order-label">
+                  Имя
+                  <svg class="order-name-icon order-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#order-name"></use>
+                  </svg>
+                  <input class="order-name-input order-input" type="text" name="order-name" />
+                </label>
+                <label class="order-tel order-label">
+                  Телефон
+                  <svg class="order-tel-icon order-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#order-tel"></use>
+                  </svg>
+                  <input class="order-tel-input order-input" type="text" name="order-tel" />
+                </label>
+                <label class="order-mail order-label">
+                  Почта
+                  <svg class="order-mail-icon order-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#order-mail"></use>
+                  </svg>
+                  <input class="order-mail-input order-input" type="text" name="order-mail" />
+                </label>
+                <label class="order-comment order-label">
+                  Комментарий
+                  <textarea
+                    class="order-comment-textarea"
+                    name="order-comment"
+                    cols="30"
+                    rows="10"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
                 <label class="order-agreement-btn">
+                  <input class="order-checkbox-agreement" type="checkbox" name="order-agreement" />
+                  Соглашаюсь с рассылкой и принимаю
+                  <span class="order-terms-link">
+                    <a class="order-check-link link" href="#">Условия договора</a></span
+                  >
                   <svg class="order-agreement-btn-off-icon" width="16" height="15">
                     <use href="./images/sprite.svg#order-agreement-btn-off"></use>
                   </svg>
                   <!-- <svg class="order-agreement-btn-icon" width="16" height="15">
                     <use href="./images/sprite.svg#order-agreement-btn"></use>
                   </svg> -->
-                  <input class="order-checkbox-agreement" type="checkbox" name="order-agreement">
-                  Соглашаюсь с рассылкой и принимаю <span class="order-terms-link"> <a class="order-check-link link" href="#">Условия договора</a></span>
                 </label>
-                <button class="order-send-btn" type="submit">Отправить</button>              
+                <button class="order-send-btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -496,8 +505,8 @@
           </ul>
         </div>
         <!-- Footer mailing -->
-          <div class="footer-mailing-container">
-            <form class="footer-mailing-form" name="footer-mailing-form" autocomplete="on">
+        <div class="footer-mailing-container">
+          <form class="footer-mailing-form" name="footer-mailing-form" autocomplete="on">
             <label class="footer-mailing-title">
               Подпишитесь на рассылку
               <input class="footer-mail" type="email" name="email" placeholder="E-mail" />
@@ -508,8 +517,8 @@
                 <use href="./images/sprite.svg#paper-plane"></use>
               </svg>
             </button>
-            </form>
-          </div>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>

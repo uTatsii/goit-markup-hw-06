@@ -426,7 +426,6 @@ img {
   position: relative;
 
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
   padding-left: 5px;
@@ -434,7 +433,7 @@ img {
   line-height: 1.7142;
   color: var(--sub-color);
 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .order-checkbox-agreement {
@@ -446,8 +445,14 @@ img {
 
 .order-agreement-btn-off-icon {
   position: absolute;
-  top: 1;
-  left: 1;
+  top: 4px;
+  left: 4px;
+
+  fill:var(--main-text-color)
+}
+
+.order-checkbox-agreement:hover .order-agreement-btn-off-icon {
+  fill: #2196f3;
 }
 
 .order-agreement-btn-icon {

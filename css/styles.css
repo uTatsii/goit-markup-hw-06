@@ -395,6 +395,10 @@ img {
   fill: var(--web-logo-color);
 }
 
+.order-comment {
+  margin-bottom: 20px;
+}
+
 .order-comment-textarea {
   padding: 12px 16px;
   resize: none;
@@ -407,11 +411,53 @@ img {
 }
 
 .order-comment-textarea::placeholder {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.order-agreement-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1.7142;
+  color: var(--sub-color);
+  margin-bottom: 30px;
+}
+
+.order-check-link {
+  line-height: 1.7142;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.order-agreement-btn-icon {
+  fill: #2196f3;
+}
+
+.order-send-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  cursor: pointer;
 }
 
 /*  Benefits  */

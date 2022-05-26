@@ -422,6 +422,11 @@ img {
   color: var(--order-comment-placeholder);
 }
 
+.order-label:hover .order-comment-textarea,
+.order-label:focus .order-comment-textarea {
+  border-color: var(--web-logo-color);
+}
+
 .order-agreement-btn {
   position: relative;
 

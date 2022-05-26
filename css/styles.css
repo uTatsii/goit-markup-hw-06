@@ -432,8 +432,6 @@ img {
 
   line-height: 1.7142;
   color: var(--sub-color);
-
-  /* cursor: pointer; */
 }
 
 .order-checkbox-agreement {
@@ -452,7 +450,7 @@ img {
 }
 
 .order-checkbox-agreement:hover .order-agreement-btn-off-icon {
-  fill: #2196f3;
+  fill: var(--btn-hover);
 }
 
 .order-agreement-btn-icon {

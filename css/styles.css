@@ -375,7 +375,7 @@ img {
 
   border: 1px solid var(--order-input-border);
   border-radius: 4px;
-  outline: none;
+  outline: 0;
 
   cursor: pointer;
 }
@@ -389,7 +389,7 @@ img {
 }
 
 .order-label:hover .order-input,
-.order-label:focus .order-input {
+.order-input:focus {
   border-color: var(--web-logo-color);
 }
 
@@ -422,7 +422,7 @@ img {
 }
 
 .order-label:hover .order-comment-textarea,
-.order-label:focus .order-comment-textarea {
+.order-comment-textarea:focus {
   border-color: var(--web-logo-color);
 }
 
@@ -441,15 +441,15 @@ img {
 
 .order-checkbox-agreement {
   position: absolute;
-
+  white-space: nowrap;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  overflow: hidden;
   border: 0;
   padding: 0;
-
-  white-space: nowrap;
-  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .order-agreement-btn-off-icon {

@@ -389,7 +389,9 @@ img {
 }
 
 .order-label:hover .order-input,
-.order-input:focus {
+.order-input:focus,
+.order-label:hover .order-comment-textarea,
+.order-comment-textarea:focus {
   border-color: var(--web-logo-color);
 }
 
@@ -419,11 +421,6 @@ img {
   line-height: 1.1428;
   letter-spacing: 0.01em;
   color: var(--order-comment-placeholder);
-}
-
-.order-label:hover .order-comment-textarea,
-.order-comment-textarea:focus {
-  border-color: var(--web-logo-color);
 }
 
 .order-agreement-btn {
@@ -460,7 +457,8 @@ img {
   fill: var(--main-text-color);
 }
 
-.order-agreement-btn:hover .order-agreement-btn-off-icon {
+.order-agreement-btn:hover .order-agreement-btn-off-icon,
+.order-checkbox-agreement:focus {
   fill: var(--btn-hover);
 }
 

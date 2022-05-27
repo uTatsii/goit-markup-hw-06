@@ -703,7 +703,6 @@ img {
 .social-link:focus {
   fill: var(--main-white);
   background-color: var(--web-logo-color);
-  border-radius: 50%;
 }
 
 /* Clients */

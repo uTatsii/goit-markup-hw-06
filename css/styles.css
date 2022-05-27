@@ -423,7 +423,7 @@ img {
   color: var(--order-comment-placeholder);
 }
 
-.order-agreement-btn {
+.order-agreement {
   position: relative;
 
   display: flex;
@@ -449,12 +449,32 @@ img {
   margin: -1px;
 }
 
-.order-agreement-btn-icon {
+.order-terms-link {
+  display: inline-block;
+  padding-left: 4px;
+
+  line-height: 1.7142;
+  text-decoration-line: underline;
+  color: var(--web-logo-color);
+}
+
+.order-checkbox {
   position: absolute;
   top: 4px;
   left: 4px;
 
-  fill: var(--main-text-color);
+  width: 17px;
+  height: 16px;
+
+  border: 1px solid black;
+}
+
+.order-agreement-icon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  fill: var(--web-logo-color);
 }
 
 .order-agreement-btn:hover .order-agreement-btn-off-icon,
@@ -463,15 +483,6 @@ img {
 }
 
 .order-checkbox-agreement:checked 
-
-.order-check-link {
-  display: inline-block;
-  padding-left: 4px;
-
-  line-height: 1.7142;
-  text-decoration-line: underline;
-  color: var(--web-logo-color);
-}
 
 .order-send-btn {
   width: 200px;

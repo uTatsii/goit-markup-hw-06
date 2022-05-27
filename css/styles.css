@@ -527,6 +527,8 @@ img {
   margin-right: auto;
 
   cursor: pointer;
+
+  transition: background-color var(--general-duration) var(--general-cubic);
 }
 
 .order-send-btn:hover,
@@ -889,6 +891,13 @@ img {
   border-radius: 4px;
 
   cursor: pointer;
+
+  transition: background-color var(--general-duration) var(--general-cubic);
+}
+
+.footer-mail-button:hover,
+.footer-mail-button:focus {
+  background-color: var(--btn-hover);
 }
 
 .paper-plane {

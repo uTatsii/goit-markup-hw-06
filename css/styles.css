@@ -16,6 +16,7 @@
   --order-input-border: rgba(33, 33, 33, 0.2);
   --main-background: rgba(47, 48, 58, 0.4);
   --what-we-do-background: rgba(47, 48, 58, 0.8);
+  --black-shadow-01: rgba(0, 0, 0, 0.1);
   --black-shadow-02: rgba(0, 0, 0, 0.2);
   --black-shadow-06: rgba(0, 0, 0, 0.06);
   --black-shadow-08: rgba(0, 0, 0, 0.08);
@@ -306,8 +307,8 @@ img {
   height: 581px;
 
   background-color: var(--main-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px var(--black-shadow-12), 0px 1px 1px var(--black-shadow-14),
+    0px 2px 1px var(--black-shadow-02);
   border-radius: 4px;
 
   transition: all var(--general-duration) var(--general-cubic);
@@ -326,10 +327,13 @@ img {
   padding: 0;
 
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--black-shadow-01);
   background-color: var(--main-white);
+  fill: var(--header-logo-color);
 
   cursor: pointer;
+
+  transition: fill var(--general-duration) var(--general-cubic);
 }
 
 .modal-btn:hover,
@@ -356,6 +360,7 @@ img {
 
 .order-label {
   position: relative;
+
   font-size: 12px;
   line-height: 1.1667;
   letter-spacing: 0.01em;
@@ -373,11 +378,15 @@ img {
   padding: 12px 42px;
   width: 100%;
 
-  border: 1px solid var(--order-input-border);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--order-input-border);
   border-radius: 4px;
   outline: 0;
 
   cursor: pointer;
+
+  transition: border-color var(--general-duration) var(--general-cubic);
 }
 
 .order-icon {
@@ -386,6 +395,8 @@ img {
   left: 12px;
 
   fill: var(--main-text-color);
+
+  transition: fill var(--general-duration) var(--general-cubic);
 }
 
 .order-label:hover .order-input,
@@ -396,7 +407,7 @@ img {
 }
 
 .order-label:hover .order-icon,
-.order-label:focus .order-icon {
+.order-input:focus .order-icon {
   fill: var(--web-logo-color);
 }
 
@@ -414,6 +425,8 @@ img {
   border: 1px solid var(--order-input-border);
   border-radius: 4px;
   outline: none;
+
+  transition: border-color var(--general-duration) var(--general-cubic);
 }
 
 .order-comment-textarea::placeholder {
@@ -486,13 +499,11 @@ img {
 }
 
 .order-agreement:hover .order-checkbox,
-.order-checkbox-agreement:focus {
+.order-checkbox-agreement:focus + .order-checkbox,
+.order-checkbox-agreement:checked + .order-checkbox {
   border-color: var(--btn-hover);
 }
 
-.order-checkbox-agreement:checked + .order-checkbox {
-  border-color: #2196f3;
-}
 
 .order-checkbox-agreement:checked ~ .order-agreement-icon {
   opacity: 1;

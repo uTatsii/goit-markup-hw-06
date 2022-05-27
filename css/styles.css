@@ -463,10 +463,15 @@ img {
   top: 4px;
   left: 4px;
 
-  width: 17px;
-  height: 16px;
+  width: 16px;
+  height: 15px;
 
-  border: 1px solid black;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--main-text-color);
+  border-radius: 2px;
+
+  transition: border-color var(--general-duration) var(--general-cubic);
 }
 
 .order-agreement-icon {
@@ -475,14 +480,23 @@ img {
   left: 4px;
 
   fill: var(--web-logo-color);
+  opacity: 0;
+
+  transition: opacity var(--general-duration) var(--general-cubic);
 }
 
-.order-agreement-btn:hover .order-agreement-btn-off-icon,
+.order-agreement:hover .order-checkbox,
 .order-checkbox-agreement:focus {
-  fill: var(--btn-hover);
+  border-color: var(--btn-hover);
 }
 
-.order-checkbox-agreement:checked 
+.order-checkbox-agreement:checked + .order-checkbox {
+  border-color: #2196f3;
+}
+
+.order-checkbox-agreement:checked ~ .order-agreement-icon {
+  opacity: 1;
+} 
 
 .order-send-btn {
   width: 200px;

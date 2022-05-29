@@ -68,75 +68,6 @@
             для вашего бизнеса
           </h1>
           <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
-          <!-- Modal window -->
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal-wrapper">
-              <button class="modal-btn" type="button" data-modal-close>
-                <svg class="close-btn" width="18" height="18">
-                  <use href="./images/sprite.svg#close-btn"></use>
-                </svg>
-              </button>
-              <form class="order-form" name="order-form" autocomplete="on">
-                <p class="order-form-title">Оставьте свои данные, мы вам перезвоним</p>
-                <label class="order-user-name order-label">
-                  Имя
-                  <input
-                    class="order-user-name-input order-input"
-                    type="text"
-                    name="order-user-name"
-                    autofocus
-                    required
-                  />
-                  <svg class="order-user-name-icon order-icon" width="18" height="18">
-                    <use href="./images/sprite.svg#order-name"></use>
-                  </svg>
-                </label>
-                <label class="order-tel order-label">
-                  Телефон
-                  <input class="order-tel-input order-input" type="tel" name="order-tel" required />
-                  <svg class="order-tel-icon order-icon" width="18" height="18">
-                    <use href="./images/sprite.svg#order-tel"></use>
-                  </svg>
-                </label>
-                <label class="order-mail order-label">
-                  Почта
-                  <input
-                    class="order-mail-input order-input"
-                    type="email"
-                    name="order-mail"
-                    required
-                  />
-                  <svg class="order-mail-icon order-icon" width="18" height="18">
-                    <use href="./images/sprite.svg#order-mail"></use>
-                  </svg>
-                </label>
-                <label class="order-comment order-label">
-                  Комментарий
-                  <textarea
-                    class="order-comment-textarea"
-                    name="order-comment"
-                    cols="30"
-                    rows="10"
-                    placeholder="Введите текст"
-                  ></textarea>
-                </label>
-                <label class="order-agreement">
-                  <input
-                    class="order-checkbox-agreement"
-                    type="checkbox"
-                    name="order-agreement-btn"
-                  />
-                  <span class="order-checkbox"></span>
-                  <svg class="order-agreement-icon" width="16" height="15">
-                    <use href="./images/sprite.svg#order-agreement-btn"></use>
-                  </svg>
-                   Соглашаюсь с рассылкой и принимаю&nbsp;
-                  <a class="order-terms-link link" href="#">Условия договора</a>
-                </label>
-                <button class="order-send-btn" type="submit">Отправить</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
       <!-- Benefits -->
@@ -538,6 +469,75 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-wrapper">
+              <button class="modal-btn" type="button" data-modal-close>
+                <svg class="close-btn" width="18" height="18">
+                  <use href="./images/sprite.svg#close-btn"></use>
+                </svg>
+              </button>
+              <form class="order-form" name="order-form" autocomplete="on">
+                <p class="order-form-title">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="order-user-name order-label">
+                  Имя
+                  <input
+                    class="order-user-name-input order-input"
+                    type="text"
+                    name="order-user-name"
+                    autofocus
+                    required
+                  />
+                  <svg class="order-user-name-icon order-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#order-name"></use>
+                  </svg>
+                </label>
+                <label class="order-tel order-label">
+                  Телефон
+                  <input class="order-tel-input order-input" type="tel" name="order-tel" required />
+                  <svg class="order-tel-icon order-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#order-tel"></use>
+                  </svg>
+                </label>
+                <label class="order-mail order-label">
+                  Почта
+                  <input
+                    class="order-mail-input order-input"
+                    type="email"
+                    name="order-mail"
+                    required
+                  />
+                  <svg class="order-mail-icon order-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#order-mail"></use>
+                  </svg>
+                </label>
+                <label class="order-comment order-label">
+                  Комментарий
+                  <textarea
+                    class="order-comment-textarea"
+                    name="order-comment"
+                    cols="30"
+                    rows="10"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </label>
+                <label class="order-agreement">
+                  <input
+                    class="order-checkbox-agreement"
+                    type="checkbox"
+                    name="order-agreement-btn"
+                  />
+                  <span class="order-checkbox"></span>
+                  <svg class="order-agreement-icon" width="16" height="15">
+                    <use href="./images/sprite.svg#order-agreement-btn"></use>
+                  </svg>
+                   Соглашаюсь с рассылкой и принимаю&nbsp;
+                  <a class="order-terms-link link" href="#">Условия договора</a>
+                </label>
+                <button class="order-send-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -603,7 +603,7 @@ img {
   border: 1px solid var(--footer-mailing-border);
   filter: drop-shadow(0px 4px 4px var(--black-shadow-15));
   border-radius: 4px;
-  outline: 0;
+  outline: transparent;
 }
 
 .footer-mail::placeholder {
@@ -644,9 +644,7 @@ img {
 }
 
 .paper-plane {
-  position: absolute;
-  right: 28px;
-
+  margin-left: 10px;
   fill: var(--main-white);
 }
 
@@ -762,7 +760,7 @@ img {
   border-style: solid;
   border-color: var(--order-input-border);
   border-radius: 4px;
-  outline: 0;
+  outline: transparent;
 
   cursor: pointer;
 
@@ -804,7 +802,7 @@ img {
 
   border: 1px solid var(--order-input-border);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
 
   transition: border-color var(--general-duration) var(--general-cubic);
 }

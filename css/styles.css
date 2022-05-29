@@ -492,6 +492,7 @@ img {
 }
 
 .footer-contacts {
+  flex-shrink: 0;
   margin-right: 70px;
 }
 

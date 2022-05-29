@@ -479,16 +479,15 @@ img {
 /*  Footer  */
 
 .footer {
-  background-color: var(--footer-background-color);
-}
-
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--footer-background-color);
 }
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -528,6 +527,10 @@ img {
 }
 
 /* Footer social */
+
+.footer-social {
+  margin-right: 93px;
+}
 
 .social-text {
   margin-bottom: 20px;
@@ -575,11 +578,20 @@ img {
 
 .footer-mailing-form {
   display: flex;
-  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.footer-mailing-title {
+  width: 100%;
+
+  font-weight: 700;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  color: var(--main-white);
+  margin-bottom: 20px;
 }
 
 .footer-mail-input {
-  margin-top: 20px;
   margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
@@ -592,15 +604,6 @@ img {
   filter: drop-shadow(0px 4px 4px var(--black-shadow-15));
   border-radius: 4px;
   outline: 0;
-}
-
-.footer-mailing-title {
-  width: min-content;
-
-  font-weight: 700;
-  line-height: 1.1428;
-  text-transform: uppercase;
-  color: var(--main-white);
 }
 
 .footer-mail::placeholder {

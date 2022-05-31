@@ -847,7 +847,7 @@ img {
 
 .order-checkbox {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 4px;
 
   width: 16px;
@@ -863,7 +863,7 @@ img {
 
 .order-agreement-icon {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 4px;
 
   fill: var(--web-logo-color);

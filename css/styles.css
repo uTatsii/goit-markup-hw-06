@@ -487,7 +487,6 @@ img {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -573,9 +572,14 @@ img {
 
 /* Footer mailing */
 
+.footer-mailing-container {
+  margin-left: auto;
+}
+
 .footer-mailing-form {
   display: flex;
   flex-wrap: wrap;
+  max-width: 570px;
 }
 
 .footer-mailing-title {
@@ -611,10 +615,9 @@ img {
 
 .footer-mail-button {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   min-width: 200px;
-  padding: 10px 29px;
+  padding: 10px 28px;
 
   font-weight: 700;
   font-size: 16px;
